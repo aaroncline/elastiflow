@@ -1,12 +1,12 @@
-# ElastiFlow
-ElastiFlow provides basic Netflow collection and visualization using Elastic Stack.
+# ElastiFlow&trade;
+ElastiFlow&trade; provides basic Netflow collection and visualization using Elastic Stack.
 
-I was inspired to create ElastiFlow following the overwhelmingly positive feedback received to an article I posted on Linkedin... [WTFlow?! Are you really still paying for commercial solutions to collect and analyze network flow data?](https://www.linkedin.com/pulse/wtflow-you-really-still-paying-commercial-solutions-collect-cowart)
+I was inspired to create ElastiFlow&trade; following the overwhelmingly positive feedback received to an article I posted on Linkedin... [WTFlow?! Are you really still paying for commercial solutions to collect and analyze network flow data?](https://www.linkedin.com/pulse/wtflow-you-really-still-paying-commercial-solutions-collect-cowart)
 
-My initial goal for ElastiFlow was to leverage only the functionality provided out-of-the-box by Elastic Stack, without optional plugins. However I felt this placed too many restrictions on the value that could be provided. So to use ElastiFlow you will need to install both the [translate](https://www.elastic.co/guide/en/logstash/current/plugins-filters-translate.html) and [cidr](https://www.elastic.co/guide/en/logstash/current/plugins-filters-cidr.html) filter plugins for Logstash.
+My initial goal for ElastiFlow&trade; was to leverage only the functionality provided out-of-the-box by Elastic Stack, without optional plugins. However I felt this placed too many restrictions on the value that could be provided. So to use ElastiFlow&trade; you will need to install both the [translate](https://www.elastic.co/guide/en/logstash/current/plugins-filters-translate.html) and [cidr](https://www.elastic.co/guide/en/logstash/current/plugins-filters-cidr.html) filter plugins for Logstash.
 
 ## Getting Started
-ElastiFlow leverages Elastic Stack 5.x, including Elasticsearch, Logstash and Kibana. Currently there is no specific configuration required for Elasticsearch. As long as Kibana and Logstash can talk to your Elasticsearch cluster you should be ready to go.
+ElastiFlow&trade; leverages Elastic Stack 5.x, including Elasticsearch, Logstash and Kibana. Currently there is no specific configuration required for Elasticsearch. As long as Kibana and Logstash can talk to your Elasticsearch cluster you should be ready to go.
 
 ### Setting up Logstash
 As mentioned above you will need to ensure that you have installed the [translate](https://www.elastic.co/guide/en/logstash/current/plugins-filters-translate.html) and [cidr](https://www.elastic.co/guide/en/logstash/current/plugins-filters-cidr.html) filter plugins for Logstash. This can achieved by running the following commands:
@@ -50,25 +50,28 @@ Finally the vizualizations and dashboards can be loaded into Kibana by importing
 The following dashboards are provided.
 
 ### Overview
-![Overview](https://user-images.githubusercontent.com/10326954/28128774-c3bb3dae-66e5-11e7-9f21-f0a6b8597eec.png)
+![Overview](https://user-images.githubusercontent.com/10326954/29495857-eaf2f668-85c7-11e7-9c4c-1a96cee6639c.png)
 
-### Conversation Partners
-![Conversation Partners](https://user-images.githubusercontent.com/10326954/28128835-000869e4-66e6-11e7-84cf-305222d86e97.png)
-
-### Traffic Analysis
-![Traffic Analysis](https://user-images.githubusercontent.com/10326954/28128837-033bdfba-66e6-11e7-80d4-6771ef9f2d9a.png)
+### Conversations
+![Conversation Partners](https://user-images.githubusercontent.com/10326954/29495872-2a1e914e-85c8-11e7-98e4-c376221f8bc4.png)
 
 ### Top-N
-![Top-N](https://user-images.githubusercontent.com/10326954/28128851-09941f80-66e6-11e7-8fd1-c961af8dbf3f.png)
+![Top-N](https://user-images.githubusercontent.com/10326954/29495879-50d98708-85c8-11e7-8e52-155161f3ea0a.png)
 
 ### Geo Location
-![Geo Location](https://user-images.githubusercontent.com/10326954/28128859-0f2b8492-66e6-11e7-8bff-03fbbbd8ac26.png)
+![Geo Location](https://user-images.githubusercontent.com/10326954/29495890-617f7018-85c8-11e7-9bfa-00adfa1607d6.png)
 
 ### Autonomous Systems
-![Autonomous Systems](https://user-images.githubusercontent.com/10326954/28128864-133b65a2-66e6-11e7-904c-d7714a350032.png)
+![Autonomous Systems](https://user-images.githubusercontent.com/10326954/29495904-82e8d474-85c8-11e7-8741-29cd4e10be52.png)
 
 ### Flow Exporters
-![Flow Exporters](https://user-images.githubusercontent.com/10326954/28128878-18381384-66e6-11e7-8a20-4549a166fb1c.png)
+![Flow Exporters](https://user-images.githubusercontent.com/10326954/29495909-92957d78-85c8-11e7-9bf4-e5aa243db27d.png)
+
+### Traffic Analysis
+![Traffic Analysis](https://user-images.githubusercontent.com/10326954/29495914-9aa4c4a6-85c8-11e7-82b3-55afb27f3a95.png)
 
 ### Flow Records
-![Flow Records](https://user-images.githubusercontent.com/10326954/28128880-1f3eee3c-66e6-11e7-82d5-c9797aa3e19a.png)
+![Flow Records](https://user-images.githubusercontent.com/10326954/29495915-9e9b4558-85c8-11e7-987f-6d8b57326650.png)
+
+## Attribution
+This product includes GeoLite data created by MaxMind, available from (http://www.maxmind.com)
